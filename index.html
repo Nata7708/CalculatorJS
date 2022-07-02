@@ -5,19 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор</title>
-    <link reel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "style.css">
 
 </head>
-<html>
-    <body>
-        <textarea id="input1" placeholder="0"></textarea>
-        <textarea id="input2" placeholder="0"></textarea><br>
-        <button onclick="add()">Сложить</button>
-        <button onclick="subtract()">Вычесть</button>
-        <button onclick="multiply()">Умножить</button>
-        <button onclick="divide()">Разделить</button><br>
-        <textarea id="equals" placeholder="Результат"></textarea>
-    
-        <script src="main.js"></script>
-    </body>
+
+<body>
+
+    <div class = "container">
+        <h1 class = "name">Калькулятор</h1>
+        <div class="area1">
+            <textarea class = "area" id="input1" placeholder="0"></textarea>
+            <textarea class = "area" id="input2" placeholder="0"></textarea><br>
+        </div>
+        <div class="area2">
+            <button class = "button" onclick="add()">Сложить</button>
+            <button class = "button" onclick="subtract()">Вычесть</button>
+            <button class = "button" onclick="multiply()">Умножить</button>
+            <button class = "button" onclick="divide()">Разделить</button><br>
+        </div>
+        <div class = "area3">
+            <textarea class = "area" id="equals" placeholder="Результат"></textarea>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
 </html>
